@@ -3,7 +3,14 @@ public class Ex22 {
     public static void main(String[] args) {
         int n = 2;
         int m = 5;
-        int p = 10;
+        int p = 5;
+
+        // Não permite que m seja maior que p
+        if(m > p) {
+            int aux = m;
+            m = p;
+            p = aux;
+        }
 
         int[][] matriz1 = new int[n][m];
         int[][] matriz2 = new int[n][p];
