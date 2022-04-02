@@ -1,3 +1,4 @@
+// import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -44,6 +45,7 @@ public class Ex27 {
                 }
             }
         }
+
         System.out.println("Linhas da matriz ordenada em ordem crescente:");
         for(int i = 0; i < matriz.length; i++) {
             for(int j = 0; j < matriz[i].length; j++) {
@@ -51,6 +53,13 @@ public class Ex27 {
             }
             System.out.println();
         }
+
+        // Outra versão
+        /*
+        for(int i = 0; i < matriz.length; i++) {
+            Arrays.parallelSort(matriz[i]);
+        }
+        */
     }
 
 }

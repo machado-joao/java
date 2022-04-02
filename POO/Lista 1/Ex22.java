@@ -36,16 +36,6 @@ public class Ex22 {
             System.out.println();
         }
 
-        int[][] maiorMatriz;
-        int[][] menorMatriz;
-        if(m > p) {
-            maiorMatriz = matriz1;
-            menorMatriz = matriz2;
-        } else {
-            maiorMatriz = matriz2;
-            menorMatriz = matriz1;
-        }
-
         // Prenche a 3a matriz com os elementos da 1a e 2a matriz
         int i1 = 0, i2 = 0, j1 = 0, j2 = 0;
         for(int i = 0; i < matriz3.length; i++) {
@@ -53,9 +43,9 @@ public class Ex22 {
             j2 = 0;
             for(int j = 0; j < matriz3[i].length; j++) {
                 if(j % 2 == 0 && j1 < m) {
-                    matriz3[i][j] = menorMatriz[i1][j1++];
+                    matriz3[i][j] = matriz1[i1][j1++];
                 } else {
-                    matriz3[i][j] = maiorMatriz[i2][j2++];
+                    matriz3[i][j] = matriz2[i2][j2++];
                 }
             }
             i1++;
