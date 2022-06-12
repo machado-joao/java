@@ -1,0 +1,10 @@
+Tempo do vetor com 100 elementos crescente: PT0S
+Tempo do vetor com 100 elementos decrescente: PT0S
+Tempo do vetor com 1000 elementos crescente: PT0.002S
+Tempo do vetor com 1000 elementos decrescente: PT0.005S
+Tempo do vetor com 10000 elementos crescente: PT0.022S
+Tempo do vetor com 10000 elementos decrescente: PT0.026S
+Tempo do vetor com 100000 elementos crescente: PT1.761S
+Tempo do vetor com 100000 elementos decrescente: PT3.117S
+Tempo do vetor com 1000000 de elementos crescente: PT2M38.959S
+Tempo do vetor com 1000000 de elementos decrescente: PT5M53.988S
