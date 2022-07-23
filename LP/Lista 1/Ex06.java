@@ -1,5 +1,5 @@
 public class Ex06 {
-    
+
     public static void main(String[] args) {
         System.out.println("LAB1");
         System.out.println("\tLógica de Programação");
