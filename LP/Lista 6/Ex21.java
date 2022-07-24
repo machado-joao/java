@@ -8,14 +8,14 @@ public class Ex21 {
         System.out.print("Digite a quantidade de números: ");
         int quantidadeNumeros = sc.nextInt();
         int acumuladora = 0, maior = 0;
-        for(int i = 1; i <= quantidadeNumeros; i++) {
+        for (int i = 1; i <= quantidadeNumeros; i++) {
             System.out.print("Digite um número: ");
             int numero = sc.nextInt();
             acumuladora += numero;
-            if(i == 1) {
+            if (i == 1) {
                 maior = numero;
             }
-            if(numero > maior) {
+            if (numero > maior) {
                 maior = numero;
             }
         }
@@ -24,5 +24,5 @@ public class Ex21 {
         double media = (double) acumuladora / quantidadeNumeros;
         System.out.println("Média dos números lidos: " + media);
     }
-    
+
 }

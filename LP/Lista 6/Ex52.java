@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex52 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,9 +10,9 @@ public class Ex52 {
         sc.close();
         int anterior = 0, proximo = 1, fibonacci;
         boolean encontrou = false;
-        while(!encontrou && anterior <= termo) {
+        while (!encontrou && anterior <= termo) {
             System.out.print(anterior + " ");
-            if(anterior == termo) {
+            if (anterior == termo) {
                 encontrou = true;
                 break;
             }
@@ -20,7 +20,8 @@ public class Ex52 {
             anterior = proximo;
             proximo = fibonacci;
         }
-        System.out.println("\nO termo " + termo + " foi encontrado na sequência de Fibonacci? " + (encontrou ? "Sim" : "Não"));
+        System.out.println(
+                "\nO termo " + termo + " foi encontrado na sequência de Fibonacci? " + (encontrou ? "Sim" : "Não"));
     }
 
 }

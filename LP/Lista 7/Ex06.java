@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex06 {
-    
+
     public static void main(String[] args) {
         Scanner scStr = new Scanner(System.in);
 
@@ -11,8 +11,8 @@ public class Ex06 {
         char letra = scStr.nextLine().toUpperCase().charAt(0);
         scStr.close();
         int contador = 0;
-        for(int i = 0; i < frase.length(); i++) {
-            if(frase.charAt(i) == letra) {
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.charAt(i) == letra) {
                 contador++;
             }
         }

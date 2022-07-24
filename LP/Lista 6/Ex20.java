@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
 public class Ex20 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         int maior = 0, menor = 0;
-        for(int i = 1; i <= 100; i++) {
+        for (int i = 1; i <= 100; i++) {
             System.out.print("Digite um valor: ");
             int valor = sc.nextInt();
-            if(i == 1) {
+            if (i == 1) {
                 maior = valor;
                 menor = valor;
             }
-            if(valor > maior) {
+            if (valor > maior) {
                 maior = valor;
             }
-            if(valor < menor) {
+            if (valor < menor) {
                 menor = valor;
             }
         }

@@ -1,8 +1,10 @@
-public class Ex02 {
+public class Ex01_v2 {
 
     public static void main(String[] args) {
-        for (int i = 10; i >= 1; i--) {
+        int i = 1;
+        while (i <= 10) {
             System.out.print(i + " ");
+            i++;
         }
         System.out.println();
     }

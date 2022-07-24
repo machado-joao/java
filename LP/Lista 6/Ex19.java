@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex19 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Scanner scStr = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Ex19 {
             quantidadeMercadoria++;
             System.out.print("Adicionar mais mercadoria? ");
             resposta = scStr.nextLine().toLowerCase().charAt(0);
-        } while(resposta == 's');
+        } while (resposta == 's');
         sc.close();
         scStr.close();
         System.out.printf("Valor em mercadoria: R$ %.2f\n", valorEmMercadoria);

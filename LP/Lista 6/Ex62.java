@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex62 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,8 +10,8 @@ public class Ex62 {
         sc.close();
         int numerador = 2, denominador = 1;
         double somaSequencia = 0;
-        for(int i = 1; i <= quantidadeTermos; i++) {
-            if(i % 2 != 0) {
+        for (int i = 1; i <= quantidadeTermos; i++) {
+            if (i % 2 != 0) {
                 somaSequencia += (double) numerador / denominador;
                 System.out.print(numerador + "/" + denominador + " ");
             } else {

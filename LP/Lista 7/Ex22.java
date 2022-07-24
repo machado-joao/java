@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex22 {
-    
+
     public static void main(String[] args) {
         Scanner scStr = new Scanner(System.in);
 
@@ -11,8 +11,8 @@ public class Ex22 {
         String palavra = scStr.nextLine().toLowerCase();
         scStr.close();
         int contador = 0;
-        for(int i = 0; i < frase.length(); i++) {
-            if(frase.substring(i).startsWith(palavra)) {
+        for (int i = 0; i < frase.length(); i++) {
+            if (frase.substring(i).startsWith(palavra)) {
                 contador++;
             }
         }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex17 {
-    
+
     public static void main(String[] args) {
         Scanner scStr = new Scanner(System.in);
 
@@ -11,8 +11,8 @@ public class Ex17 {
         String frase2 = scStr.nextLine();
         scStr.close();
         boolean iguais = true;
-        for(int i = 0; i < frase1.length(); i++)  {
-            if(frase1.charAt(i) != frase2.charAt(i)) {
+        for (int i = 0; i < frase1.length(); i++) {
+            if (frase1.charAt(i) != frase2.charAt(i)) {
                 iguais = false;
                 break;
             }

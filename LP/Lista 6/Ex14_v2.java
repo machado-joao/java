@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex14_v2 {
-    
+
     public static void main(String[] args) {
         Scanner leia = new Scanner(System.in);
 
@@ -12,14 +12,14 @@ public class Ex14_v2 {
         leia.close();
 
         int soma = 0;
-        for(int valor = inicio; valor <= fim; valor++) {
+        for (int valor = inicio; valor <= fim; valor++) {
             soma += valor;
         }
         System.out.println("Soma dos valores com FOR: " + soma);
 
         soma = 0;
         int valor = inicio;
-        while(valor <= fim) {
+        while (valor <= fim) {
             soma += valor;
             valor++;
         }

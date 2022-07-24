@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex65 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,28 +15,28 @@ public class Ex65 {
         // Primos
         int numero = 0, divisores = 0, auxiliar = 2;
         boolean encontrouValor = false;
-        for(int i = 1; i <= quantidadeTermos; i++) {
-            while(contador <= i) {
+        for (int i = 1; i <= quantidadeTermos; i++) {
+            while (contador <= i) {
                 fatorial *= i;
                 contador++;
             }
             numerador = fatorial;
             encontrouValor = false;
-            for(int j = auxiliar; !encontrouValor; j++) {
+            for (int j = auxiliar; !encontrouValor; j++) {
                 numero = j;
                 divisores = 0;
-                for(int k = 1; k <= numero; k++) {
-                    if(numero % k == 0) {
+                for (int k = 1; k <= numero; k++) {
+                    if (numero % k == 0) {
                         divisores++;
                         auxiliar = j + 1;
                     }
                 }
-                if(divisores == 2) {
+                if (divisores == 2) {
                     denominador = numero;
                     encontrouValor = true;
                 }
             }
-            if(i % 2 != 0) {
+            if (i % 2 != 0) {
                 somaSequencia += (double) numerador / denominador;
                 System.out.print(numerador + "/" + denominador + " ");
             } else {
@@ -44,7 +44,7 @@ public class Ex65 {
                 System.out.print("-" + numerador + "/" + denominador + " ");
             }
         }
-        System.out.printf("\nO valor final da sequência é %.3f\n", somaSequencia);     
+        System.out.printf("\nO valor final da sequência é %.3f\n", somaSequencia);
     }
 
 }

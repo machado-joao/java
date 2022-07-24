@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex24 {
-    
+
     public static void main(String[] args) {
         Scanner scStr = new Scanner(System.in);
 
@@ -10,13 +10,13 @@ public class Ex24 {
         scStr.close();
         System.out.println("Sequência digitada: " + sequencia);
         int contador = 0, maiorSequencia = 0;
-        for(int i = 0; i < sequencia.length(); i++) {
-            if(sequencia.charAt(i) == '1') {
+        for (int i = 0; i < sequencia.length(); i++) {
+            if (sequencia.charAt(i) == '1') {
                 contador++;
             } else {
                 contador = 0;
             }
-            if(contador > maiorSequencia) {
+            if (contador > maiorSequencia) {
                 maiorSequencia = contador;
             }
         }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex54 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,9 +11,9 @@ public class Ex54 {
         int termoFinal = sc.nextInt();
         sc.close();
         int contadorPassagem = 0, anterior = 0, proximo = 1, fibonacci;
-        for(int i = 1; i <= termoFinal; i++) {
+        for (int i = 1; i <= termoFinal; i++) {
             contadorPassagem++;
-            if(contadorPassagem >= termoInicial) {
+            if (contadorPassagem >= termoInicial) {
                 System.out.print(anterior + " ");
             }
             fibonacci = anterior + proximo;

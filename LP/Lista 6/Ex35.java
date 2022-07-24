@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex35 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -9,15 +9,15 @@ public class Ex35 {
         do {
             System.out.print("Digite a quantidade de termos da sequência: ");
             quantidadeTermos = sc.nextInt();
-            if(quantidadeTermos == 0) {
+            if (quantidadeTermos == 0) {
                 break;
             }
-            if(quantidadeTermos < 0) {
+            if (quantidadeTermos < 0) {
                 System.out.println("Digite uma quantidade positiva!");
             }
-        } while(quantidadeTermos < 0);
+        } while (quantidadeTermos < 0);
         sc.close();
-        for(int i = 1; i <= quantidadeTermos; i++) {
+        for (int i = 1; i <= quantidadeTermos; i++) {
             System.out.print(i + " " + -i + " ");
         }
         System.out.println();

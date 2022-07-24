@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class Ex60 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.print("Digite o primeiro termo da sequência: ");
         int anterior = sc.nextInt();
         System.out.print("Digite o segundo termo da sequência: ");
@@ -14,9 +14,9 @@ public class Ex60 {
         sc.close();
         int ricci;
         boolean encontrou = false;
-        while(!encontrou && anterior <= termo) {
+        while (!encontrou && anterior <= termo) {
             System.out.print(anterior + " ");
-            if(anterior == termo) {
+            if (anterior == termo) {
                 encontrou = true;
                 break;
             }
@@ -24,7 +24,8 @@ public class Ex60 {
             anterior = proximo;
             proximo = ricci;
         }
-        System.out.println("\nO termo " + termo + " foi encontrado na sequência de Ricci? " + (encontrou ? "Sim" : "Não"));
+        System.out.println(
+                "\nO termo " + termo + " foi encontrado na sequência de Ricci? " + (encontrou ? "Sim" : "Não"));
     }
 
 }
