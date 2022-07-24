@@ -1,5 +1,5 @@
 public class Ex10 {
-    
+
     public static void main(String[] args) {
         String numeroPedido = "54321";
         String codigoProduto = "3C2B1A";

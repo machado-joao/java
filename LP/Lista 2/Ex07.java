@@ -1,5 +1,5 @@
 public class Ex07 {
-    
+
     public static void main(String[] args) {
         String frase = "Bom dia";
         byte idade = 3;

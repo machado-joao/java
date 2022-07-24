@@ -1,5 +1,5 @@
 public class Ex09 {
-    
+
     public static void main(String[] args) {
         byte valorByte = 127;
         short valorShort = 32767;

@@ -1,5 +1,5 @@
 public class Ex04 {
-    
+
     public static void main(String[] args) {
         byte idade = 19;
         short ano = 1571;
