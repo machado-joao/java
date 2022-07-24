@@ -1,5 +1,5 @@
 public class Ex28 {
-    
+
     public static void main(String[] args) {
         int n = 10, m = 5;
         int[] ah = new int[(int) (Math.random() * n + 1)];
@@ -11,7 +11,7 @@ public class Ex28 {
         System.out.print("Vetor 2: ");
         Vetor.imprimirVetor(ai);
         System.out.print("Vetores concatenados: ");
-        Vetor.imprimirVetor(Vetor.intercalarVetores(ah, ai));    
+        Vetor.imprimirVetor(Vetor.intercalarVetores(ah, ai));
     }
 
 }

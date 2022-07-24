@@ -1,9 +1,9 @@
 public class Ex25 {
-    
+
     public static void main(String[] args) {
         int n = (int) (Math.random() * 10 + 1);
         int[] af = new int[n];
-        for(int i = 0; i < af.length; i++) {
+        for (int i = 0; i < af.length; i++) {
             System.out.printf("[%d] = ", i);
             af[i] = Vetor.scanner.nextInt();
         }
@@ -11,8 +11,8 @@ public class Ex25 {
         int quantidadePares = Vetor.contarPares(af);
         int[] impares = new int[quantidadeImpares], pares = new int[quantidadePares];
         int impar = 0, par = 0;
-        for(int i = 0; i < af.length; i++) {
-            if(af[i] % 2 != 0) {
+        for (int i = 0; i < af.length; i++) {
+            if (af[i] % 2 != 0) {
                 impares[impar++] = af[i];
             } else {
                 pares[par++] = af[i];

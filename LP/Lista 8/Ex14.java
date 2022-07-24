@@ -1,5 +1,5 @@
 public class Ex14 {
-    
+
     public static void main(String[] args) {
         int m = 15, n = 10;
         int[] s, t;

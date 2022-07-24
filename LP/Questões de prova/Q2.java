@@ -32,50 +32,50 @@ public class Q2 {
 			String sequencia = "";
 
 			switch (opcao) {
-			case 1:
-				for (int termoFatorial = 1; termoFatorial <= qtdTermos; termoFatorial++) {
-					int fatorial = 1;
-					int valor = termoFatorial;
-					while (valor >= 2) {
-						fatorial *= valor;
-						valor--;
-					}
-					sequencia = fatorial + " " + sequencia;
-				}
-				break;
-			case 2:
-				int primeiro = 0, segundo = 1, fibonacci = 0;
-				int qtdTermosFibonacci = 1;
-				while (qtdTermosFibonacci <= qtdTermos) {
-					sequencia = primeiro + " " + sequencia;
-					fibonacci = primeiro + segundo;
-					primeiro = segundo;
-					segundo = fibonacci;
-					qtdTermosFibonacci++;
-				}
-				break;
-			case 3:
-				int termoPrimo = 1;
-				int numero = 2;
-				while (termoPrimo <= qtdTermos) {
-					int contadorPrimos = 0;
-					for (int divisor = 1; divisor <= numero; divisor++) {
-						if (numero % divisor == 0) {
-							contadorPrimos++;
+				case 1:
+					for (int termoFatorial = 1; termoFatorial <= qtdTermos; termoFatorial++) {
+						int fatorial = 1;
+						int valor = termoFatorial;
+						while (valor >= 2) {
+							fatorial *= valor;
+							valor--;
 						}
+						sequencia = fatorial + " " + sequencia;
 					}
-					if (contadorPrimos == 2) {
-						termoPrimo++;
-						sequencia = numero + " " + sequencia;
+					break;
+				case 2:
+					int primeiro = 0, segundo = 1, fibonacci = 0;
+					int qtdTermosFibonacci = 1;
+					while (qtdTermosFibonacci <= qtdTermos) {
+						sequencia = primeiro + " " + sequencia;
+						fibonacci = primeiro + segundo;
+						primeiro = segundo;
+						segundo = fibonacci;
+						qtdTermosFibonacci++;
 					}
-					numero++;
-				}
-				break;
-			case 4:
-				System.out.println("Saindo...");
-				Thread.currentThread();
-				Thread.sleep(2000);
-				break;
+					break;
+				case 3:
+					int termoPrimo = 1;
+					int numero = 2;
+					while (termoPrimo <= qtdTermos) {
+						int contadorPrimos = 0;
+						for (int divisor = 1; divisor <= numero; divisor++) {
+							if (numero % divisor == 0) {
+								contadorPrimos++;
+							}
+						}
+						if (contadorPrimos == 2) {
+							termoPrimo++;
+							sequencia = numero + " " + sequencia;
+						}
+						numero++;
+					}
+					break;
+				case 4:
+					System.out.println("Saindo...");
+					Thread.currentThread();
+					Thread.sleep(2000);
+					break;
 			}
 			if (opcao >= 1 && opcao <= 3) {
 				System.out.println("Sequência inversa: " + sequencia);

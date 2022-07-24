@@ -1,18 +1,18 @@
 public class Ex08 {
-    
+
     public static void main(String[] args) {
         int[] f;
         f = Vetor.lerVetor(5);
         int contadorImpares = 0;
-        for(int i = 0; i < f.length; i++) {
-            if(f[i] % 2 != 0) {
+        for (int i = 0; i < f.length; i++) {
+            if (f[i] % 2 != 0) {
                 contadorImpares++;
             }
         }
-        if(contadorImpares > 0) {
+        if (contadorImpares > 0) {
             int somaImpares = 0;
-            for(int i = 0; i < f.length; i++) {
-                if(f[i] % 2 != 0) {
+            for (int i = 0; i < f.length; i++) {
+                if (f[i] % 2 != 0) {
                     somaImpares += f[i];
                 }
             }

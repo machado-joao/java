@@ -1,5 +1,5 @@
 public class Ex27 {
-    
+
     public static void main(String[] args) {
         int n = 10, m = 5;
         int[] ah = new int[(int) (Math.random() * n + 1)];

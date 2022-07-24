@@ -1,5 +1,5 @@
 public class Ex13 {
-    
+
     public static void main(String[] args) {
         int m = (int) (Math.random() * 10 + 1), n = (int) (Math.random() * 10 + 1);
         int[] p, q;

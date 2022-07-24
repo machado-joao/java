@@ -1,5 +1,5 @@
 public class Ex21 {
-    
+
     public static void main(String[] args) {
         int n = 10;
         int[] ab;
@@ -9,8 +9,8 @@ public class Ex21 {
         int quantidadeImpares = Vetor.contarImpares(ab);
         int[] pares = new int[quantidadeImpares];
         int auxiliar = 0;
-        for(int i = 0; i < ab.length; i++) {
-            if(ab[i] % 2 != 0) {
+        for (int i = 0; i < ab.length; i++) {
+            if (ab[i] % 2 != 0) {
                 pares[auxiliar++] = ab[i] * 2;
             }
         }

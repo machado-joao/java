@@ -1,5 +1,5 @@
 public class Ex15 {
-    
+
     public static void main(String[] args) {
         int m = (int) (Math.random() * 10 + 1), n = (int) (Math.random() * 15 + 1);
         int[] s, t;
