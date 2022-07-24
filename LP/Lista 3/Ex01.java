@@ -1,5 +1,5 @@
 public class Ex01 {
-    
+
     public static void main(String[] args) {
         int a = 10;
         long b = a;
@@ -16,7 +16,7 @@ public class Ex01 {
         System.out.println(e);
         System.out.println(f);
         System.out.println(g);
-        System.out.println(h);   
+        System.out.println(h);
     }
 
 }

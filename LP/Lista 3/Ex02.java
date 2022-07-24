@@ -1,5 +1,5 @@
 public class Ex02 {
- 
+
     public static void main(String[] args) {
         long primeiroNumero = 2147483648L;
         int segundoNumero = (int) primeiroNumero;
