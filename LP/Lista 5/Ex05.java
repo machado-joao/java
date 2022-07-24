@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex05 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,7 +11,7 @@ public class Ex05 {
         int anoNascimento = sc.nextInt();
         sc.close();
         int idade = anoAtual - anoNascimento;
-        if(idade >= 16) {
+        if (idade >= 16) {
             System.out.println("Você poderá votar este ano!");
         } else {
             System.out.println("Você não poderá voltar este ano!");

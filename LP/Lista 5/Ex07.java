@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex07 {
- 
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -10,7 +10,7 @@ public class Ex07 {
         System.out.print("Digite outro valor: ");
         int valor2 = sc.nextInt();
         sc.close();
-        if(valor1 > valor2) {
+        if (valor1 > valor2) {
             int auxiliar = valor1;
             valor1 = valor2;
             valor2 = auxiliar;

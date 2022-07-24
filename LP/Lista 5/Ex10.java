@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Ex10 {
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -11,7 +11,7 @@ public class Ex10 {
         double valorVendas = sc.nextDouble();
         sc.close();
         double salarioAdicional = 0, valorAcima1500 = 0;
-        if(valorVendas > 1500) {
+        if (valorVendas > 1500) {
             valorAcima1500 = valorVendas - 1500;
             valorVendas -= valorAcima1500;
             salarioAdicional += valorAcima1500 * 0.05;
