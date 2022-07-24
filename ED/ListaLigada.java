@@ -33,7 +33,7 @@ public class ListaLigada<T> {
 
     public void adicionar(T valor) {
         Elemento<T> novoElemento = new Elemento<T>(valor);
-        if(this.primeiro == null && this.ultimo == null) {
+        if (this.primeiro == null && this.ultimo == null) {
             this.primeiro = novoElemento;
             this.ultimo = novoElemento;
         } else {
@@ -46,15 +46,15 @@ public class ListaLigada<T> {
     public void remover(T valor) {
         Elemento<T> anterior = null;
         Elemento<T> atual = this.primeiro;
-        for(int i = 0; i < this.getTamanho(); i++) {
-            if(atual.getValor().equals(valor)) {
-                if(atual == this.primeiro && atual == this.ultimo) { // this.tamanho == 1
+        for (int i = 0; i < this.getTamanho(); i++) {
+            if (atual.getValor().equals(valor)) {
+                if (atual == this.primeiro && atual == this.ultimo) { // this.tamanho == 1
                     this.primeiro = null;
                     this.ultimo = null;
-                } else if(atual == this.primeiro) {
+                } else if (atual == this.primeiro) {
                     this.primeiro = atual.getProximo();
                     atual.setProximo(null);
-                } else if(atual == this.ultimo) {
+                } else if (atual == this.ultimo) {
                     this.ultimo = anterior;
                     anterior.setProximo(null);
                 } else {
@@ -71,8 +71,8 @@ public class ListaLigada<T> {
 
     public Elemento<T> obter(int posicao) {
         Elemento<T> atual = this.primeiro;
-        for(int i = 0; i < posicao; i++) {
-            if(atual.getProximo() != null) {
+        for (int i = 0; i < posicao; i++) {
+            if (atual.getProximo() != null) {
                 atual = atual.getProximo();
             }
         }

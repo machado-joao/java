@@ -6,7 +6,7 @@ public class IteradorListaLigada<T> {
     }
 
     public boolean temProximo() {
-        if(this.elemento.getProximo() == null) {
+        if (this.elemento.getProximo() == null) {
             return false;
         }
         return true;
